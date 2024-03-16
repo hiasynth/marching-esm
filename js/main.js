@@ -43,6 +43,15 @@ const SDF = {
 			gl_Position = vec4( a_pos, 0., 1. );
     }`
   ,
+  keys: {
+    w:0,
+    a:0,
+    s:0,
+    d:0,
+    alt:0
+  },
+  useProxies: false,
+  cameraEnabled: false,
 
   createBindings() {
     const bindings = {

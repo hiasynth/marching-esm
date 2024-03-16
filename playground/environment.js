@@ -57,20 +57,11 @@ window.onload = function() {
 
   SDF.init( document.querySelector('canvas') )
   SDF.assign( window )
-  SDF.keys = {
-    w:0,
-    a:0,
-    s:0,
-    d:0,
-    alt:0
-  }
 
   Math.export()
-  SDF.useProxies = false
 
   let hidden = false
   let fontSize = .95
-  SDF.cameraEnabled = false
 
   //document.querySelector('#cameratoggle').onclick = e => {
   //  SDF.cameraEnabled = e.target.checked
