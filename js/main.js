@@ -48,11 +48,11 @@ const SDF = {
     const bindings = {
       march: this.createScene.bind( this )
     };
-    this.export(bindings);
+    this.assign(bindings);
     return bindings;
   },
 
-  export( obj ) {
+  assign( obj ) {
     Object.assign( 
       obj, 
       this.primitives,
@@ -79,7 +79,7 @@ const SDF = {
     this.Scene      = this.__scene( this )
     this.domainOps  = this.__domainOps( this )
     this.noise     = this.__noise( this )
-    this.export( this )
+    this.assign( this )
 
     this.canvas = canvas//document.createElement('canvas')
 

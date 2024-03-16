@@ -56,7 +56,7 @@ window.onload = function() {
   const SDF = window.Marching
 
   SDF.init( document.querySelector('canvas') )
-  SDF.export( window )
+  SDF.assign( window )
   SDF.keys = {
     w:0,
     a:0,
