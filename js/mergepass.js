@@ -44,7 +44,7 @@ const FX = {
     })
   },
 
-  export( obj ) {
+  assign( obj ) {
     obj.Antialias  = FX.Antialias
     obj.Blur       = FX.Blur
     obj.Bloom      = FX.Bloom

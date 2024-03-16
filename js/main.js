@@ -63,7 +63,7 @@ const SDF = {
       //this.alterations
     )
 
-    this.fx.export( obj )
+    this.fx.assign( obj )
 
     obj.Light = this.Light
     obj.Material = this.Material
