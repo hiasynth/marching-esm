@@ -4,6 +4,7 @@ const { param_wrap, MaterialID } = require( './utils.js' )
 const __lighting = require( './lighting.js' )
 const { Var, float_var_gen, vec2_var_gen, vec3_var_gen, vec4_var_gen, int_var_gen, VarAlloc } = require('./var.js')
 
+var Scene;
 const getScene = function( SDF ) {
 
   Scene = function( objs, canvas, steps=100, minDistance=.001, maxDistance=40, size=2, shouldAnimate=false ) {

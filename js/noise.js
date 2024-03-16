@@ -3,6 +3,7 @@ const SceneNode = require( './sceneNode.js' )
 const { param_wrap, MaterialID } = require( './utils.js' )
 const { Var, float_var_gen, vec2_var_gen, vec3_var_gen, vec4_var_gen } = require( './var.js' )
 
+var Noise;
 const getNoise = function( SDF ) {
 Noise = function( strength=.25, bias=1, timeMod=1 ) {
   const op = Object.create( Noise.prototype )
