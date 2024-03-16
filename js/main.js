@@ -44,6 +44,14 @@ const SDF = {
     }`
   ,
 
+  createBindings() {
+    const bindings = {
+      march: this.createScene.bind( this )
+    };
+    this.export(bindings);
+    return bindings;
+  },
+
   export( obj ) {
     Object.assign( 
       obj, 
