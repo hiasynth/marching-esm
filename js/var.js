@@ -20,7 +20,7 @@ const Var = function( value, fixedName = null, __type ) {
   v.type = v.value.type
   if( v.type === undefined ) v.type = __type || 'float' 
 
-  value.var = v
+  if (typeof value === "object" || typeof value === "function") value.var = v
 
   if( v.type !== 'float' && v.type !== 'int' ) {
     Object.defineProperties( v, {
